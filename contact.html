@@ -1,0 +1,13 @@
+<!-- This page contains the contact information for the website -->
+
+<h1>Contact</h1>
+<p>Email: iftesam-amin@gmail.com</p>
+<p>Phone: +8801717171717</p>
+<p>Address: 123 Main St, Anytown, USA</p>
+
+<form action="{% url 'contact' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <input type="submit" value="Submit">
+</form>
