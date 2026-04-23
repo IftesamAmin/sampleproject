@@ -33,6 +33,14 @@
 
 
 </form>
- <a href="{% url 'about' %}">About Page</a>
- <a href="{% url 'contact' %}">Contact Page</a>
+<div class="mt-4">
+    <h5>Navigation</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+        <a href="{% url 'about' %}" class="btn btn-outline-primary btn-sm">About</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-secondary btn-sm">Contact</a>
+        <a href="{% url 'users' %}" class="btn btn-outline-info btn-sm">Users</a>
+        <a href="{% url 'api' %}" class="btn btn-outline-warning btn-sm">API</a>
+        <a href="{% url 'login' %}" class="btn btn-outline-success btn-sm">Login</a>
+    </div>
+</div>
 <div/>
